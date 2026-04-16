@@ -166,6 +166,18 @@
   background-size: 100% 100%;
 }
 
+/* Hide "Made with Emergent" badge */
+[class*="emergent"],
+[id*="emergent"],
+div[style*="Made with Emergent"],
+a[href*="emergent"],
+div:has(img[alt*="Emergent"]),
+div:has(img[src*="emergent"]) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 /* Hide Spline branding and all overlays */
 .spline-container {
   position: relative;

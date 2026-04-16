@@ -87,13 +87,13 @@ export const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 px-4 py-2 bg-white/5 border border-white/20 text-white text-sm focus:border-[#ff3b3b] focus:outline-none transition-colors duration-300"
+                className="flex-1 px-4 py-2 bg-white/5 border border-white/20 text-white text-sm focus:border-[#ff3b3b] focus:outline-none transition-colors duration-300 min-w-0"
                 style={{ fontFamily: 'Inter, sans-serif' }}
               />
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-4 py-2 bg-[#ff3b3b] hover:bg-[#ff3b3b]/80 text-white transition-colors duration-300"
+                className="px-4 py-2 bg-[#ff3b3b] hover:bg-[#ff3b3b]/80 text-white transition-colors duration-300 whitespace-nowrap flex-shrink-0 text-sm"
               >
                 Subscribe
               </motion.button>

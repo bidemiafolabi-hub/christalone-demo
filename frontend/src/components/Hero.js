@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import Spline from '@splinetool/react-spline';
 import { ArrowRight, Play } from 'lucide-react';
+import { AnimatedHero3D } from './AnimatedHero3D';
 
 export const Hero = () => {
   return (
@@ -83,7 +83,7 @@ export const Hero = () => {
           </motion.div>
         </motion.div>
 
-        {/* Right - 3D Spline */}
+        {/* Right - Custom 3D Animation */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -91,11 +91,8 @@ export const Hero = () => {
           className="relative h-[500px] lg:h-[700px] w-full"
         >
           <div className="absolute inset-0 bg-[#ff3b3b]/10 blur-3xl rounded-full"></div>
-          <div className="relative h-full w-full spline-container" style={{ clipPath: 'inset(0 30% 20% 0)' }}>
-            <Spline
-              scene="https://prod.spline.design/nuSoA2Ne4AJ4p4cP/scene.splinecode"
-              style={{ width: '140%', height: '140%', marginLeft: '-20%', marginTop: '-20%' }}
-            />
+          <div className="relative h-full w-full overflow-hidden">
+            <AnimatedHero3D />
           </div>
         </motion.div>
       </div>
