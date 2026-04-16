@@ -166,6 +166,49 @@
   background-size: 100% 100%;
 }
 
+/* Hide Spline branding and all overlays */
+.spline-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.spline-container canvas {
+  pointer-events: auto;
+}
+
+/* Hide all text overlays, links, and UI elements in Spline */
+.spline-container div[style*="position: absolute"],
+.spline-container div[style*="position: fixed"],
+.spline-container a,
+.spline-container button,
+.spline-container span,
+.spline-container p {
+  display: none !important;
+}
+
+/* Hide Spline watermark and branding */
+#spline-watermark,
+[id*="spline"],
+[id*="Spline"],
+[class*="spline-watermark"],
+[class*="spline-logo"],
+.spline-container > div > div:not(:first-child),
+.spline-container iframe {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Ensure only canvas is visible */
+.spline-container > * {
+  pointer-events: none;
+}
+
+.spline-container canvas {
+  pointer-events: auto !important;
+  display: block !important;
+}
+
 /* Responsive typography */
 @media (max-width: 768px) {
   .display-huge { font-size: 42px; }

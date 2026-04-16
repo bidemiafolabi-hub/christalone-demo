@@ -91,10 +91,10 @@ export const Hero = () => {
           className="relative h-[500px] lg:h-[700px] w-full"
         >
           <div className="absolute inset-0 bg-[#ff3b3b]/10 blur-3xl rounded-full"></div>
-          <div className="relative h-full w-full">
+          <div className="relative h-full w-full spline-container" style={{ clipPath: 'inset(0 30% 20% 0)' }}>
             <Spline
               scene="https://prod.spline.design/nuSoA2Ne4AJ4p4cP/scene.splinecode"
-              style={{ width: '100%', height: '100%' }}
+              style={{ width: '140%', height: '140%', marginLeft: '-20%', marginTop: '-20%' }}
             />
           </div>
         </motion.div>
