@@ -80,7 +80,7 @@
 /* Button styles */
 .btn-primary {
   background: #ff3b3b;
-  color: #000000;
+  color: #FFFFFF;
   border: none;
   border-radius: 0px;
   padding: 14px 24px;
@@ -219,6 +219,57 @@ div:has(img[src*="emergent"]) {
 .spline-container canvas {
   pointer-events: auto !important;
   display: block !important;
+}
+
+/* Dropdown and select styling */
+select {
+  background: #000000 !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+select option {
+  background: #000000 !important;
+  color: #FFFFFF !important;
+  padding: 10px !important;
+}
+
+select option:hover,
+select option:focus,
+select option:checked {
+  background: #ff3b3b !important;
+  color: #FFFFFF !important;
+}
+
+/* Date picker styling */
+input[type="date"] {
+  background: #000000 !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color-scheme: dark;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+  color: #FFFFFF;
+}
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  background: transparent;
+}
+
+input[type="date"]::-webkit-datetime-edit-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #FFFFFF;
 }
 
 /* Responsive typography */
