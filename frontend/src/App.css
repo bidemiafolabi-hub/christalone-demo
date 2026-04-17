@@ -249,13 +249,16 @@ input[type="date"] {
   color-scheme: dark;
 }
 
+/* Calendar icon - make it bright white */
 input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1) brightness(2);
+  filter: invert(1) brightness(10);
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 1;
+  background: none;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  filter: invert(1) brightness(10);
   opacity: 1;
 }
 
