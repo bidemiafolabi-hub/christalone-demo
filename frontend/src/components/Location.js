@@ -45,7 +45,7 @@ export const Location = () => {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="CHRIST A APARTMENTS Location"
+              title="CHRIST ALONE APARTMENTS Location"
             ></iframe>
           </motion.div>
 

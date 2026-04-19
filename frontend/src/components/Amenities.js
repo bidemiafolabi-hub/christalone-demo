@@ -42,7 +42,7 @@ export const Amenities = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {apartmentData.amenities.map((amenity, index) => {
             const IconComponent = iconMap[amenity.icon];
-            
+
             return (
               <motion.div
                 key={amenity.id}
@@ -60,7 +60,7 @@ export const Amenities = () => {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
-                  
+
                   {/* Icon overlay */}
                   <div className="absolute top-4 right-4 w-12 h-12 bg-[#ff3b3b]/20 backdrop-blur-md border border-[#ff3b3b]/30 flex items-center justify-center group-hover:bg-[#ff3b3b] transition-all duration-300">
                     <IconComponent className="text-white" size={24} />

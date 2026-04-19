@@ -35,7 +35,7 @@ export const Hero = () => {
           </h1>
 
           <p className="body-large text-white/80 max-w-lg">
-            Experience the future of luxury living at CHRIST A APARTMENTS. Located in the heart of Ibadan, 
+            Experience the future of luxury living at CHRIST ALONE APARTMENTS. Located in the heart of Ibadan, 
             we redefine modern comfort with state-of-the-art amenities and intelligent design.
           </p>
 

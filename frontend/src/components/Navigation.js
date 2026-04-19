@@ -28,7 +28,7 @@ export const Navigation = () => {
             className="text-2xl font-bold"
             style={{ fontFamily: 'Orbitron, sans-serif' }}
           >
-            <span className="text-white">CHRIST A</span>
+            <span className="text-white">CHRIST ALONE</span>
             <span className="text-[#ff3b3b] ml-2">APARTMENTS</span>
           </motion.div>
 

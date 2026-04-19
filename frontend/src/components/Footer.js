@@ -13,7 +13,7 @@ export const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>
-              <span className="text-white">CHRIST A</span>
+              <span className="text-white">CHRIST ALONE</span>
               <br />
               <span className="text-[#ff3b3b]">APARTMENTS</span>
             </h3>
@@ -104,7 +104,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
-            © {currentYear} CHRIST A APARTMENTS. All rights reserved.
+            © {currentYear} CHRIST ALONE APARTMENTS. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-white/40 hover:text-[#ff3b3b] text-sm transition-colors duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>
